@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Roboto', sans-serif;
-    transition: all ease-in-out .5s;
+    transition: all ease-in-out .2s;
 }
 
 body {
@@ -11,6 +11,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
+}
+
+h1.mega {
+    font-size: 5vw;
 }
 
 a {
@@ -83,6 +87,10 @@ a:hover, a:active, a:focus {
     height: 100%;
 }
 
+#bottom-menubar {
+    height: 80px;
+}
+
 nav#menu ul {
     list-style: none;
     margin-bottom: 0;
@@ -96,7 +104,7 @@ nav#menu ul li {
 }
 
 nav#menu ul li a {
-    padding: 32px 25px;
+    padding: 28px 25px;
     display: block;
     height: 100%;
     text-transform: uppercase;
@@ -119,7 +127,7 @@ footer#mainfooter #top-footer {
 }
 
 footer#mainfooter #top-footer h5 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-transform: uppercase;
     margin-bottom: 20px;
     display: block;
