@@ -88,12 +88,16 @@ a:hover, a:active, a:focus {
 }
 
 #bottom-menubar {
-    height: 80px;
+    min-height: 80px;
 }
 
-nav#menu #menu-toggle {
-    display: block;
+#bottom-menubar #menu-toggle {
+    display: none;
     float: right;
+    height: 100%;
+    color: inherit;
+    border: none;
+    background-color: transparent;
 }
 
 nav#menu ul {
@@ -101,6 +105,8 @@ nav#menu ul {
     margin-bottom: 0;
     height: 100%;
     float: right;
+    padding: 0;
+    width: 100%;
 }
 
 nav#menu ul li {
@@ -123,14 +129,6 @@ nav#menu ul li a:hover {
     color: #ff0000;
 }
 
-nav#menu #menu-toggle {
-    padding: 28px 15px;
-    display: none;
-    height: 100%;
-    color: inherit;
-    border: none;
-    background-color: transparent;
-}
 
 footer#mainfooter #top-footer, footer#mainfooter #bottom-footer {
     background-color: #fff;
@@ -178,11 +176,9 @@ footer#mainfooter #bottom-footer p {
         display: none;
     }
 
-    nav#menu ul#main-menu {
-        display: none;
-    }
+    
 
-    nav#menu #menu-toggle {
+    #bottom-menubar #menu-toggle {
         display: block;
     }
     
@@ -202,11 +198,9 @@ footer#mainfooter #bottom-footer p {
         display: none;
     }
 
-    nav#menu ul#main-menu {
-        display: none;
-    }
+    
 
-    nav#menu #menu-toggle {
+    #bottom-menubar #menu-toggle {
         display: block;
     }
 
