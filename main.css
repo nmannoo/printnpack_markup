@@ -123,6 +123,15 @@ nav#menu ul li a:hover {
     color: #ff0000;
 }
 
+nav#menu #menu-toggle {
+    padding: 28px 15px;
+    display: none;
+    height: 100%;
+    color: inherit;
+    border: none;
+    background-color: transparent;
+}
+
 footer#mainfooter #top-footer, footer#mainfooter #bottom-footer {
     background-color: #fff;
 }
@@ -165,8 +174,16 @@ footer#mainfooter #bottom-footer p {
 
 /* Super small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-    #info, #menu {
+    #info {
         display: none;
+    }
+
+    nav#menu ul#main-menu {
+        display: none;
+    }
+
+    nav#menu #menu-toggle {
+        display: block;
     }
     
     #top-menubar #search #phone2 {
@@ -185,8 +202,12 @@ footer#mainfooter #bottom-footer p {
         display: none;
     }
 
-    nav#menu ul {
+    nav#menu ul#main-menu {
         display: none;
+    }
+
+    nav#menu #menu-toggle {
+        display: block;
     }
 
     #top-menubar #search #phone2 {
@@ -196,8 +217,6 @@ footer#mainfooter #bottom-footer p {
     #mainfooter #top-footer  {
         text-align: center;
     }
-
-
 }
 
 /* Medium devices (tablets, 768px and up) */
