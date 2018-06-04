@@ -91,8 +91,9 @@ a:hover, a:active, a:focus {
     height: 80px;
 }
 
-#menu #menu-toggle {
-    display:none;
+nav#menu #menu-toggle {
+    display: block;
+    float: right;
 }
 
 nav#menu ul {
@@ -176,14 +177,15 @@ footer#mainfooter #bottom-footer p {
         text-align: center;
     }
 
-    #menu #menu-toggle {
-        display: block;
-    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
-    #info, #menu {
+    #info {
+        display: none;
+    }
+
+    nav#menu ul {
         display: none;
     }
 
@@ -195,9 +197,6 @@ footer#mainfooter #bottom-footer p {
         text-align: center;
     }
 
-    #menu #menu-toggle {
-        display: inline-block;
-    }
 
 }
 
