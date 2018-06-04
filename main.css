@@ -107,6 +107,7 @@ nav#menu ul {
     float: right;
     padding: 0;
     width: 100%;
+    display: block;
 }
 
 nav#menu ul li {
@@ -129,6 +130,22 @@ nav#menu ul li a:hover {
     color: #ff0000;
 }
 
+#navbarCollapse {
+    float: right;
+}
+
+
+/* =======================
+    Slider Images
+======================*/
+.slider-image {
+    background: url('./images/cakeboard.png');
+    width:100%;
+    padding-top:31.25%;
+    position:relative;
+    background-size:cover;
+    background-position: center center;
+}
 
 footer#mainfooter #top-footer, footer#mainfooter #bottom-footer {
     background-color: #fff;
@@ -176,7 +193,17 @@ footer#mainfooter #bottom-footer p {
         display: none;
     }
 
-    
+    nav#menu ul {
+        float: left;
+    }
+
+    nav#menu ul li a {
+        padding: 28px 15px;
+    }
+
+    #navbarCollapse {
+        float: left;
+    }
 
     #bottom-menubar #menu-toggle {
         display: block;
@@ -190,6 +217,9 @@ footer#mainfooter #bottom-footer p {
         text-align: center;
     }
 
+    .slider-image {
+        padding-top: 43.1%;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -198,8 +228,18 @@ footer#mainfooter #bottom-footer p {
         display: none;
     }
 
-    
+    nav#menu ul {
+        float: left;
+    }
 
+    nav#menu ul li a {
+        padding: 28px 15px;
+    }
+
+    #navbarCollapse {
+        float: left;
+    }
+    
     #bottom-menubar #menu-toggle {
         display: block;
     }
@@ -210,6 +250,10 @@ footer#mainfooter #bottom-footer p {
 
     #mainfooter #top-footer  {
         text-align: center;
+    }
+
+    .slider-image {
+        padding-top: 43.1%;
     }
 }
 

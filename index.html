@@ -52,7 +52,6 @@
                                     <i class="material-icons">phone</i> Contact Us on +230 249 2900
                                 </span>
                             </p>
-                            
                         </div>
                     </div>
                 </div>
@@ -61,8 +60,8 @@
                 <div class="container">
                     <div class="row h-100">
                         <div id="logo" class="col-lg-3 col-md-4 col-sm-12 col-12">
-                            <span class="p-3 d-block float-left w-100">
-                                <img class="img-responsive mx-auto d-block" height="45px" width="213px" src="./images/logo.png" alt="Print n Pack Logo">
+                            <span class="p-3 d-block float-left">
+                                <img class="img-responsive" height="45px" width="213px" src="./images/logo.png" alt="Print n Pack Logo">
                             </span>
                             <button id="menu-toggle" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                                 <i class="material-icons">menu</i>
@@ -84,7 +83,7 @@
         </header>
 
         <div class="row">
-            <div class="col-12" style="background-color:red;width:100%;padding-top:31.25%;position:relative;"></div>
+            <div class="col-12 slider-image"></div>
         </div>
 
         <section id="content" class="py-4">
@@ -163,5 +162,18 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="./js/bootstrap.min.js"></script>
+
+    <script>
+        var navBar = document.getElementById("navbarCollapse");
+        window.addEventListener('resize', function(){
+            if (window.innerWidth < 768 && navBar.classList.contains('show')) {
+            navBar.classList.remove('show');
+            }
+            else if (window.innerWidth >= 768 && !navBar.classList.contains('show')) {
+                navBar.classList.add('show');
+            }
+        })
+    </script>
+
   </body>
 </html>
