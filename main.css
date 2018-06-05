@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #eee;
+    background: rgb(245, 245, 245);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -132,6 +132,7 @@ nav#menu ul li a:hover {
 
 #navbarCollapse {
     float: right;
+    height: 100%;
 }
 
 /* =======================
@@ -145,7 +146,7 @@ nav#menu ul li a:hover {
 	box-shadow: 0 1px 1px 0 rgba(0,0,0, 0.05);
 	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0, 0.05);
 	-webkit-transition: 0.25s;
-	transition: 0.25s;
+    transition: 0.25s;
 }
 
 /* =======================
@@ -158,6 +159,23 @@ nav#menu ul li a:hover {
     position:relative;
     background-size:cover;
     background-position: center center;
+}
+
+/* =======================
+    Sections
+======================*/
+.text-red {
+    color: red;
+}
+
+.text-blue {
+    color: rgb(1, 1, 116);
+}
+
+section#content h6 {
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
 footer#mainfooter #top-footer, footer#mainfooter #bottom-footer {
@@ -233,6 +251,10 @@ footer#mainfooter #bottom-footer p {
     .slider-image {
         padding-top: 43.1%;
     }
+
+    h1.mega {
+        font-size: 2rem;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -267,6 +289,10 @@ footer#mainfooter #bottom-footer p {
 
     .slider-image {
         padding-top: 43.1%;
+    }
+
+    h1.mega {
+        font-size: 2rem;
     }
 }
 
