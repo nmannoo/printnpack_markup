@@ -67,11 +67,16 @@ a:hover, a:active, a:focus {
     float: right;
     background-color: #ff0000;
     color: #fff;
+    transition: none;
 }
 
 #top-menubar #search #searchbutton:hover {
     background-color: #fff;
     color: #ff0000;
+}
+
+#top-menubar #search #searchbutton i.material-icons {
+    transition: none;
 }
 
 #top-menubar #search p {
@@ -147,6 +152,12 @@ nav#menu ul li a:hover {
 	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0, 0.05);
 	-webkit-transition: 0.25s;
     transition: 0.25s;
+}
+
+.search-bar input.form-control {
+    border-radius: 0;
+    border: none;
+    font-size: 14px;
 }
 
 /* =======================
@@ -304,6 +315,10 @@ footer#mainfooter #bottom-footer p {
 
     #top-menubar #info p#location {
         display: none;
+    }
+
+    .slider-image {
+        padding-top: 43.1%;
     }
 }
 
