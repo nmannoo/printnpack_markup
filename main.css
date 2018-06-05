@@ -140,6 +140,19 @@ nav#menu ul li a:hover {
     height: 100%;
 }
 
+.fixed-top {
+    animation: smoothScroll 0.3s forwards;
+}
+
+@keyframes smoothScroll {
+    0% {
+        transform: translateY(-120px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 /* =======================
     Search bar
 ======================*/

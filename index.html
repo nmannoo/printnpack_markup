@@ -202,7 +202,17 @@
         });
 
         var searchBar = document.getElementById('search-bar');
-        
+
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 120) {
+                $('#mainhead').addClass('fixed-top');
+            }
+            else {
+                $('#mainhead').removeClass('fixed-top');
+            }
+        })
+
     </script>
 
   </body>
