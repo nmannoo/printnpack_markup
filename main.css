@@ -134,6 +134,25 @@ nav#menu ul li a:hover {
     float: right;
 }
 
+/* =======================
+    Search bar
+======================*/
+
+.search-bar {
+	background: transparent;
+	position: fixed;
+	top: -60px;
+	left: 0;
+	z-index: 980;
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0, 0.05);
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0, 0.05);
+	-webkit-transition: 0.25s;
+	transition: 0.25s;
+}
+
+
+
 
 /* =======================
     Slider Images
@@ -146,6 +165,8 @@ nav#menu ul li a:hover {
     background-size:cover;
     background-position: center center;
 }
+
+
 
 footer#mainfooter #top-footer, footer#mainfooter #bottom-footer {
     background-color: #fff;
