@@ -1,5 +1,10 @@
 /* Different responsive breakpoint specific styling */
 
+/* 
+=========================
+        Global
+=========================
+*/
 * {
     font-family: 'Roboto', sans-serif;
     transition: all ease-in-out .2s;
@@ -7,7 +12,7 @@
 
 body {
     background: rgb(245, 245, 245);
-}
+}   
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
@@ -25,6 +30,11 @@ a:hover, a:active, a:focus {
     text-decoration: none;
 }
 
+/* 
+=========================
+    Top Menu Bar
+=========================
+*/
 #top-menubar {
     background: url('./images/banner.jpg') no-repeat;
     background-size: cover;
@@ -34,7 +44,7 @@ a:hover, a:active, a:focus {
 
 #top-menubar #info p {
     display: block;
-    float: left;
+    float: right;
     margin-bottom: 0;
     font-size: 13px;
     color: #fff;
@@ -92,10 +102,11 @@ a:hover, a:active, a:focus {
     height: 100%;
 }
 
-#bottom-menubar {
-    min-height: 80px;
-}
-
+/* 
+=========================
+    Bottom Menubar
+=========================
+*/
 #bottom-menubar #menu-toggle {
     display: none;
     float: right;
@@ -105,6 +116,15 @@ a:hover, a:active, a:focus {
     background-color: transparent;
 }
 
+#bottom-menubar {
+    min-height: 80px;
+}
+
+/* 
+=========================
+        Nav Menu
+=========================
+*/
 nav#menu ul {
     list-style: none;
     margin-bottom: 0;
@@ -121,7 +141,11 @@ nav#menu ul li {
 }
 
 nav#menu ul li a {
-    padding: 28px 25px;
+    padding-top: 35px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    border-bottom: 5px transparent;
     display: block;
     height: 100%;
     text-transform: uppercase;
@@ -131,8 +155,13 @@ nav#menu ul li a {
 }
 
 nav#menu ul li a:hover {
-    background-color: #eee;
     color: #ff0000;
+    border-bottom: 5px solid red;
+}
+
+nav#menu .menu-active a {
+    color: #ff0000;
+    border-bottom: 5px solid red;
 }
 
 #navbarCollapse {
@@ -154,9 +183,11 @@ nav#menu ul li a:hover {
     }
 }
 
-/* =======================
+/* 
+=======================
     Search bar
-======================*/
+=======================
+*/
 
 .search-bar {
     background: #fff;
@@ -208,15 +239,22 @@ nav#menu ul li a:hover {
     overflow: hidden;
 }
 
+#slide2 {
+    background: url('./images/cakebox.png');
+    background-size:cover;
+    background-position: center center;
+    overflow: hidden;
+}
+
 /* =======================
     Sections: Content
 ======================*/
 .text-red {
-    color: red;
+    color: #e02827;
 }
 
 .text-blue {
-    color: rgb(1, 1, 116);
+    color: #141391;
 }
 
 section#content {
@@ -235,8 +273,21 @@ section#content h6 {
 section#products h2 {
     margin-bottom: 20px;
     text-align: center;
-} 
+}
 
+#products .card img.card-img-top {
+    transition: 2s ease-in-out;
+}
+
+#products .card img.card-img-top:hover {
+    transform: scale(1.2);
+}
+
+/* 
+=========================
+        Footer
+=========================
+*/
 footer#mainfooter #top-footer, footer#mainfooter #bottom-footer {
     background-color: #fff;
 }
@@ -277,6 +328,12 @@ footer#mainfooter #bottom-footer p {
     border-radius: 0px;
 }
 
+
+/* 
+=========================
+    Media Queries
+=========================
+
 /* Super small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     #info {
@@ -288,7 +345,7 @@ footer#mainfooter #bottom-footer p {
     }
 
     nav#menu ul li a {
-        padding: 28px 15px;
+        padding: 14px 15px;
     }
 
     #navbarCollapse {
@@ -313,6 +370,11 @@ footer#mainfooter #bottom-footer p {
 
     h1.mega {
         font-size: 2rem;
+    }
+
+    #bottom-menubar #logo img {
+        height: 45px;
+        width: 213px;
     }
 }
 
@@ -327,7 +389,7 @@ footer#mainfooter #bottom-footer p {
     }
 
     nav#menu ul li a {
-        padding: 28px 15px;
+        padding: 14px 15px;
     }
 
     #navbarCollapse {
@@ -352,6 +414,11 @@ footer#mainfooter #bottom-footer p {
 
     h1.mega {
         font-size: 2rem;
+    }
+
+    #bottom-menubar #logo img {
+        height: 45px;
+        width: 213px;
     }
 }
 
