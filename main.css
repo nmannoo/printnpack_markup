@@ -1,6 +1,6 @@
 /* Different responsive breakpoint specific styling */
 
-/* 
+/*
 =========================
         Global
 =========================
@@ -241,6 +241,13 @@ nav#menu .menu-active a {
 
 #slide2 {
     background: url('./images/cakebox.png');
+    background-size:cover;
+    background-position: center center;
+    overflow: hidden;
+}
+
+#slide3 {
+    background: url('./images/thermal-paper.png');
     background-size:cover;
     background-position: center center;
     overflow: hidden;
